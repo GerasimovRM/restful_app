@@ -12,7 +12,6 @@ def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
 
-
 def main():
     global_init("db/blogs.db")
     app.register_blueprint(jobs_blueprint)
